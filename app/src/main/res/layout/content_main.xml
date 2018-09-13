@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="adaptstreamingvideo.com.adaptstreamingvideo.MainActivity"
+    tools:showIn="@layout/activity_main"
+   >
+
+
+    <net.majorkernelpanic.streaming.gl.SurfaceView
+        android:id="@+id/surface"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom|end|center_vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="START"
+                android:layout_centerInParent="true"
+                android:background="@drawable/background_border"
+                android:textColor="@color/white"
+                android:id="@+id/start"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_border"
+            android:id="@+id/poleTagi">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bitrate: "
+                android:textColor="@color/white"
+                android:id="@+id/bitrate"
+                android:textStyle="bold"
+                android:padding="6dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50000 kbps"
+                android:textColor="@color/white"
+                android:id="@+id/bitrateValue"
+                android:textStyle="bold"
+                android:padding="6dp"
+                android:layout_toRightOf="@+id/bitrate"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Framerate: "
+                android:textColor="@color/white"
+                android:id="@+id/framerate"
+                android:layout_below="@+id/bitrate"
+                android:textStyle="bold"
+                android:padding="6dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30 fps"
+                android:textStyle="bold"
+                android:id="@+id/framerateValue"
+                android:layout_toRightOf="@+id/framerate"
+                android:layout_below="@+id/bitrateValue"
+                android:textColor="@color/white"
+                android:padding="6dp"
+             />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rozdzielczość:"
+                android:layout_toRightOf="@+id/bitrateValue"
+                android:id="@+id/Resolution"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:padding="6dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1280x720"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:padding="6dp"
+                android:id="@+id/ResolutionValue"
+                android:layout_toRightOf="@+id/Resolution"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Prędkość wysyłania: "
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/framerateValue"
+                android:id="@+id/buffer"
+                android:layout_below="@+id/Resolution"
+                android:padding="6dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:id="@+id/buffereValue"
+                android:layout_toRightOf="@+id/buffer"
+                android:layout_below="@+id/bitrateValue"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/addressRTSP"
+            android:padding="6dp"
+            android:text="Aby uruchomić wpisz w VLC: 192.168.1.51:1234"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/infoAboutBitrate"
+            android:padding="6dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

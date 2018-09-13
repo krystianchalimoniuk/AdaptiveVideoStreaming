@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Adaptive Video Streaming</string>
+    <string name="action_settings">Ustawienia</string>
+    <string name="options_activity_title">Ustawienia</string>
+    <string name="streaming">Strumieniowanie!</string>
+    <string name="bitrate">0 kbps</string>
+    <string name="settings0">Aktualna rozdzielczość to</string>
+    <string name="settings1">Aktualny framerate to</string>
+    <string name="settings2">Aktualny bitrate to</string>
+    <string name="settings3">Strumienowanie dźwięku</string>
+    <string name="settings4">Włącz/wyłącz strumieniowanie dźwięku</string>
+    <string name="settings5">Kodek audio</string>
+    <string name="settings6">AAC wymaga co najmniej androida ICS</string>
+    <string name="settings7">Strumieniowanie wideo</string>
+    <string name="settings8">Włącz/wyłącz strumieniowanie wideo</string>
+    <string name="settings9">Kodek wideo</string>
+    <string name="settings10">Dostępne są dwa algorytmy kodowania wideo: H.263 and H.264</string>
+    <string name="settings11">Rozdzielczość</string>
+    <string name="settings12">Framerate</string>
+    <string name="settings13">Bitrate</string>
+    <string name="settings28">Serwer RTSP</string>
+    <string name="settings29">Akrywuuj</string>
+    <string name="settings31">Port serwera RTSP</string>
+    <string name="settings32">Port używany przez serwer RTSP</string>
+    <string name="bind_failed">Musisz wybrać inny port dla %s serwera !</string>
+    <string name="port_used">Port w użyciu!</string>
+
+</resources>
