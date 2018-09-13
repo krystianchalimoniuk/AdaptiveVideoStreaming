@@ -24,3 +24,6 @@ Do odpowiedniego działania aplikacji niezbędny jest serwer RTSP (aplikacja tes
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
   ```
+# Aktywności
+![MainActivity](https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/34624291_1946025225430777_9019862343042990080_n.png?_nc_cat=0&oh=b289056ab6692036b9dbcc028a211e49&oe=5C292096)
+![SettingsActivity](https://scontent-waw1-1.xx.fbcdn.net/v/t1.15752-9/34585050_1946025315430768_1234728536967741440_n.png?_nc_cat=0&oh=b9d7f682ca119a6ddc755526ed3f0323&oe=5C2698F2)
